@@ -1,0 +1,55 @@
+@mixin heading-1 {
+  font-feature-settings: 'liga' off;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+  color: $text-primary;
+}
+
+@mixin heading-2 {
+  font-feature-settings: 'liga' off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: $text-primary;
+}
+
+@mixin paragraph-1 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text-primary;
+}
+
+@mixin paragraph-2 {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-secondary;
+}
+
+@mixin btn-base {
+  @include paragraph-1;
+
+  padding: 16px 36px;
+  border-radius: 8px;
+  background-color: $btn-bg-primary;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $btn-bg-primary-hover;
+  }
+
+  &:active {
+    background-color: $btn-bg-primary-active;
+  }
+
+  &:focus {
+    border: 2px solid #9d8b2f;
+  }
+}
